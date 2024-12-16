@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background: linear-gradient(to bottom, #64b3f4, #2980b9);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.developer-title {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #fdfdfd;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Profile Card Styling */
+.profile-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    max-width: 350px;
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+.profile-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Profile Image */
+.profile-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    object-fit: cover;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+.profile-card:hover .profile-image {
+    transform: scale(1.1);
+}
+
+/* Name and Attributes */
+.profile-name {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #fdfdfd;
+}
+.profile-attributes {
+    list-style: none;
+    margin: 10px 0 20px;
+    color: #e0e0e0;
+}
+.profile-attributes li {
+    margin: 5px 0;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s, transform 0.3s;
+}
+.social-icons a:hover {
+    background: #2980b9;
+    transform: translateY(-5px);
+}
+
+/* Back to Home Button */
+.back-home {
+    margin-top: 20px;
+    text-align: center;
+}
+.back-home a {
+    background: #fff;
+    color: #2980b9;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+.back-home a:hover {
+    background: #2980b9;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .developer-title {
+        font-size: 1.5em;
+    }
+    .profile-card {
+        padding: 15px;
+    }
+    .profile-name {
+        font-size: 1.2em;
+    }
+    .profile-image {
+        width: 100px;
+        height: 100px;
+    }
+    .social-icons a {
+        width: 35px;
+        height: 35px;
+        font-size: 1em;
+    }
+}
